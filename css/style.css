@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: black;
+}
+
+main {
+  max-width: 1120px;
+  margin: 6rem auto;
+}
+
+nav {
+  background-color: #252525;
+  padding: 1rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.banner-item {
+  height: 80vh;
+}
+
+.banner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin: 7rem;
+}
+
+.navbar_top {
+  display: flex;
+  color: white;
+}
+.icon {
+  font-size: 24px;
+  padding-left: 8px;
+}
+.red h1 {
+  color: tomato;
+  padding-left: 10px;
+}
+.nav {
+  display: flex;
+}
+.nav a {
+  padding: 18px;
+}
+.nav a:hover{
+  border-bottom: 2px solid red;
+  cursor: pointer;
+  font-weight: bold;
+}
+.navbar_top_left {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  color: white;
+}
+.navbar_top_right {
+  display: flex;
+}
+.navbar_top_right i {
+  padding: 12px;
+}
+.navbar_top_right h6 {
+  padding: 12px;
+}
+
+.nav_items_right_pane {
+  align-items: center;
+}
+
+.nav_items_right_pane > * {
+  margin-right: 0.8rem;
+  padding-right: 0.6rem;
+}
+
+.container_top {
+  color: white;
+  margin-top: 4rem;
+}
+.container_top h5 {
+  padding: 4px;
+}
+.card {
+  width: 220px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+  border-color: lightgray;
+  padding-bottom: 60px;
+  margin: 28px;
+}
+
+.play {
+  transform: scale(1);
+  opacity: 0;
+  transition: 0.2s ease;
+  color: white;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.card:hover .play {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text_top h5 {
+  text-decoration: bold;
+  color: royalblue;
+  display: inline-block;
+}
+.text_top h2 {
+  color: white;
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 2;
+  padding-right: 10px;
+}
+.text_top h4 {
+  color: white;
+  display: inline-block;
+}
+.text_middle h6 {
+  display: inline-block;
+  color: lightgray;
+}
+.text_bottom h6 {
+  color: white;
+  display: inline-block;
+}
+.text {
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.popular-category {
+  display: flex;
+}
+.popular-category .image {
+  height: 180px;
+  margin-right: 4px;
+  border: 1px solid white;
+}
+.popular-category .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image img {
+  transform: scale(1);
+  transition: 0.2s ease;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.image:hover img {
+  transform: scale(1.2);
+}
